@@ -6,3 +6,9 @@
   --color-secondary: #2056a3;
 }
 /* stylelint-enable at-rule-no-unknown */
+
+/* Smooth scrolling for in-page anchor links and space for fixed header */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}

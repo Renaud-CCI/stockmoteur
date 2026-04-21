@@ -55,7 +55,7 @@ function applyAos() {
     card.setAttribute('data-aos', 'zoom-in')
     // duration = animation length; delay = when it starts (used for staggering)
     const duration = isMobile ? '100' : '300'
-    const delay = isMobile ? '0' : String((i + 1) * 200)
+    const delay = isMobile ? '0' : String((i + 1) * 400)
     card.setAttribute('data-aos-duration', duration)
     card.setAttribute('data-aos-delay', delay)
   })
