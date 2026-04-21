@@ -16,6 +16,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "gsap": "^3.13.0",
     "sweetalert2": "^11.26.3",
     "swiper": "^12.0.2",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.14",
     "@tsconfig/node22": "^22.0.2",
+    "@types/aos": "^3.0.7",
     "@types/node": "^22.18.6",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/eslint-config-prettier": "^10.2.0",
