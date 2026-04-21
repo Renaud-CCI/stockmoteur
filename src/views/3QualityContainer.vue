@@ -9,7 +9,7 @@
       </div>
 
       <!-- Texte -->
-      <div class="text-justify" data-aos="zoom-in" data-aos-duration="100">
+      <div class="text-justify" data-aos="zoom-in" data-aos-duration="300" data-aos-offset="100">
         <h2 class="text-3xl font-bold mb-6 text-center sm:text-start">
           Moteurs et boîtes de vitesses d’occasion
         </h2>

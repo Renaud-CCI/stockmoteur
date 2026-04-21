@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
       <!-- Texte -->
-      <div class="text-justify" data-aos="zoom-in" data-aos-duration="100">
+      <div class="text-justify" data-aos="zoom-in" data-aos-duration="300" data-aos-offset="100">
         <h2 class="text-3xl font-bold mb-6 text-center sm:text-start">
           Qualité inégalée
         </h2>

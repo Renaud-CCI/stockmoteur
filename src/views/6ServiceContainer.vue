@@ -1,6 +1,6 @@
 <template>
   <section class="py-20 bg-neutral-100">
-    <div class="max-w-4xl mx-auto px-6 text-center" data-aos="zoom-in" data-aos-duration="100">
+    <div class="max-w-4xl mx-auto px-6 text-center" data-aos="zoom-in" data-aos-duration="300" data-aos-offset="200">
 
       <h2 class="text-3xl font-bold mb-8">
         Engagement environnemental et service clientèle

@@ -58,6 +58,7 @@ function applyAos() {
     const delay = isMobile ? '0' : String((i + 1) * 400)
     card.setAttribute('data-aos-duration', duration)
     card.setAttribute('data-aos-delay', delay)
+    card.setAttribute('data-aos-offset', '100')
   })
   AOS.refresh()
 }
