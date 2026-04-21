@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed top-0 left-0 w-full bg-neutral-50 shadow z-50">
+  <header class="fixed top-0 left-0 w-full max-w-full bg-neutral-50 shadow z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
       <!-- Logo + Nom -->
