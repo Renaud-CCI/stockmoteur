@@ -31,6 +31,7 @@
           Notre vaste sélection de moteurs et boîtes de vitesses d’occasion, minutieusement testés et inspectés,
           garantit une expérience de conduite fiable à des tarifs compétitifs.
         </p>
+
       </div>
 
     </div>

@@ -6,33 +6,45 @@
         Notre fonctionnement
       </h2>
 
-      <div ref="grid" class="grid md:grid-cols-4 gap-8">
+      <div ref="grid" class="grid md:grid-cols-5 gap-8">
 
         <div>
-          <div class="text-primary text-3xl font-bold mb-4">1</div>
+          <!-- <div class="text-primary text-3xl font-bold mb-2">1</div> -->
+          <div class="text-2xl mb-4">📞</div>
           <p class="text-neutral-600">
             Vous nous contactez avec les informations de votre véhicule.
           </p>
         </div>
 
         <div>
-          <div class="text-primary text-3xl font-bold mb-4">2</div>
+          <!-- <div class="text-primary text-3xl font-bold mb-2">2</div> -->
+          <div class="text-2xl mb-4">🔍</div>
           <p class="text-neutral-600">
             Nous vérifions la compatibilité et sélectionnons la pièce adaptée.
           </p>
         </div>
 
         <div>
-          <div class="text-primary text-3xl font-bold mb-4">3</div>
+          <!-- <div class="text-primary text-3xl font-bold mb-2">3</div> -->
+          <div class="text-2xl mb-4">💳</div>
           <p class="text-neutral-600">
             Paiement sécurisé, avec possibilité de règlement en 4 fois.
           </p>
         </div>
 
         <div>
-          <div class="text-primary text-3xl font-bold mb-4">4</div>
+          <!-- <div class="text-primary text-3xl font-bold mb-2">4</div> -->
+          <div class="text-2xl mb-4">🚚</div>
           <p class="text-neutral-600">
             Expédition en 24/48h partout en France métropolitaine.
+          </p>
+        </div>
+
+        <div>
+          <!-- <div class="text-primary text-3xl font-bold mb-2">5</div> -->
+          <div class="text-2xl mb-4">📦</div>
+          <p class="text-neutral-600">
+            Suivez votre colis en temps réel jusqu'à sa livraison.
           </p>
         </div>
 

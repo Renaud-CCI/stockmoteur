@@ -20,6 +20,7 @@
 
         <p class="text-neutral-600">
           Avec notre engagement envers la qualité, chaque kilomètre est synonyme de confiance et de tranquillité.
+          Nos pièces sont garanties de 3 à 12 mois selon le modèle.
         </p>
       </div>
 

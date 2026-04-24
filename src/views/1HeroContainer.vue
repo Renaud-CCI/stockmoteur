@@ -11,8 +11,7 @@
     <!-- Content -->
     <div class="relative z-10 max-w-3xl px-6">
       <h1 class="text-4xl md:text-5xl font-bold leading-tight">
-        Stock Moteur<span class="hidden sm:inline-flex">&nbsp;–&nbsp;</span><br class="sm:hidden"><span
-          class="text-primary">Moteurs et
+        Stock Moteur<br><span class="text-primary">Moteurs et
           boîtes de vitesses
           d’occasion</span> garantis
       </h1>
