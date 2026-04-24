@@ -41,9 +41,9 @@
         <button class="hover:text-neutral-50 underline underline-offset-2" @click="modalOpen = true">
           Conditions de garantie
         </button>
-        <a href="/mentions-legales.html" class="hover:text-neutral-50">
+        <button class="hover:text-neutral-50 underline underline-offset-2" @click="legalOpen = true">
           Mentions légales
-        </a>
+        </button>
       </div>
 
       <p class="text-xs mt-6">
@@ -169,7 +169,8 @@
               <p>Les pièces font l'objet d'une garantie de <strong>3 mois</strong> à compter de la date figurant sur la
                 facture (toutes réclamations devront être faites par lettre recommandée avec accusé de réception).
                 Concernant les moteurs, un défaut sur le joint de culasse devra être signalé dans un délai de
-                <strong>quinze jours</strong> à compter de la date figurant sur la facture.</p>
+                <strong>quinze jours</strong> à compter de la date figurant sur la facture.
+              </p>
             </section>
 
             <section>
@@ -248,15 +249,125 @@
       </div>
     </Transition>
   </Teleport>
+
+  <!-- Modale Mentions légales -->
+  <Teleport to="body">
+    <Transition name="modal">
+      <div v-if="legalOpen" class="fixed inset-0 z-50 flex items-center justify-center p-4" role="dialog"
+        aria-modal="true" aria-label="Mentions légales">
+
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black/70" @click="legalOpen = false"></div>
+
+        <!-- Panneau -->
+        <div
+          class="relative z-10 bg-white text-neutral-800 rounded-xl shadow-2xl w-full max-w-3xl max-h-[90vh] flex flex-col">
+
+          <!-- En-tête -->
+          <div class="flex items-center justify-between px-6 py-4 border-b border-neutral-200 shrink-0">
+            <h2 class="text-lg font-bold">Mentions légales &amp; Données personnelles</h2>
+            <button @click="legalOpen = false"
+              class="text-neutral-500 hover:text-neutral-900 transition text-2xl leading-none" aria-label="Fermer">
+              &times;
+            </button>
+          </div>
+
+          <!-- Contenu scrollable -->
+          <div class="overflow-y-auto px-6 py-6 text-sm space-y-6 leading-relaxed">
+
+            <section>
+              <h3 class="font-bold text-base mb-2">1. Éditeur du site</h3>
+              <ul class="space-y-1 text-neutral-700">
+                <li><strong>Dénomination&nbsp;:</strong> Stock Moteur</li>
+                <li><strong>Forme juridique&nbsp;:</strong> EURL</li>
+                <li><strong>Adresse&nbsp;:</strong> 11, le Riou – 81240 Albine – France</li>
+                <li><strong>Téléphone&nbsp;:</strong> 06 01 96 65 26</li>
+                <li><strong>Email&nbsp;:</strong> stockmoteur@laposte.net</li>
+                <li><strong>SIRET&nbsp;:</strong> 81739436400019</li>
+                <li><strong>TVA intracommunautaire&nbsp;:</strong> FR18817394364</li>
+              </ul>
+            </section>
+
+            <section>
+              <h3 class="font-bold text-base mb-2">2. Hébergement</h3>
+              <ul class="space-y-1 text-neutral-700">
+                <li><strong>Nom&nbsp;:</strong> Vercel Inc.</li>
+                <li><strong>Adresse&nbsp;:</strong> 440 N Barranca Ave #4133, Covina, CA 91723, USA</li>
+                <li><strong>Site&nbsp;:</strong> <a href="https://vercel.com" target="_blank" rel="noopener noreferrer"
+                    class="underline hover:text-primary">https://vercel.com</a></li>
+              </ul>
+            </section>
+
+            <section>
+              <h3 class="font-bold text-base mb-2">3. Propriété intellectuelle</h3>
+              <p class="text-neutral-700">
+                L'ensemble du contenu du site (textes, images, logo) est la propriété de Stock Moteur, sauf mention
+                contraire.
+                Certaines images sont issues de banques d'images libres de droits.
+              </p>
+            </section>
+
+            <section>
+              <h3 class="font-bold text-base mb-2">4. Données personnelles (RGPD)</h3>
+              <div class="space-y-3 text-neutral-700">
+                <div>
+                  <p class="font-semibold">Données collectées</p>
+                  <p>Nom, téléphone, email, informations véhicule.</p>
+                </div>
+                <div>
+                  <p class="font-semibold">Finalité</p>
+                  <p>Répondre aux demandes de devis ou d'information.</p>
+                </div>
+                <div>
+                  <p class="font-semibold">Durée de conservation</p>
+                  <p>Les données sont conservées le temps nécessaire au traitement de la demande.</p>
+                </div>
+                <div>
+                  <p class="font-semibold">Sous-traitant</p>
+                  <p>Les données du formulaire transitent via le service <a href="https://formsubmit.co" target="_blank"
+                      rel="noopener noreferrer" class="underline hover:text-primary">FormSubmit.co</a>.</p>
+                </div>
+                <div>
+                  <p class="font-semibold">Droits des utilisateurs</p>
+                  <p>Conformément au RGPD, vous pouvez demander l'accès, la modification ou la suppression de vos
+                    données en nous contactant à <a href="mailto:stockmoteur@laposte.net"
+                      class="underline hover:text-primary">stockmoteur@laposte.net</a>.</p>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h3 class="font-bold text-base mb-2">5. Cookies</h3>
+              <p class="text-neutral-700">Le site n'utilise aucun cookie à des fins de suivi ou d'analyse.</p>
+            </section>
+
+            <section>
+              <h3 class="font-bold text-base mb-2">6. Conception &amp; développement</h3>
+              <p class="text-neutral-700">
+                Site conçu et développé par <a href="https://www.creation-site-loire.fr/" target="_blank"
+                  rel="noopener noreferrer" class="underline hover:text-primary">Renaud Bresson</a>.
+              </p>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </Transition>
+  </Teleport>
+
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const modalOpen = ref(false)
+const legalOpen = ref(false)
 
 function onKeydown(e: KeyboardEvent) {
-  if (e.key === 'Escape') modalOpen.value = false
+  if (e.key === 'Escape') {
+    modalOpen.value = false
+    legalOpen.value = false
+  }
 }
 
 onMounted(() => window.addEventListener('keydown', onKeydown))
