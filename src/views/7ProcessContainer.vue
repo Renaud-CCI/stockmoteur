@@ -1,12 +1,12 @@
 <template>
-  <section class="py-20">
+  <section class="py-20 bg-neutral-50">
     <div class="max-w-5xl mx-auto px-6 text-center">
 
       <h2 class="text-3xl font-bold mb-12">
         Notre fonctionnement
       </h2>
 
-      <div ref="grid" class="grid md:grid-cols-5 gap-8">
+      <div ref="grid" class="grid md:grid-cols-4 gap-8">
 
         <div>
           <!-- <div class="text-primary text-3xl font-bold mb-2">1</div> -->
@@ -40,13 +40,13 @@
           </p>
         </div>
 
-        <div>
-          <!-- <div class="text-primary text-3xl font-bold mb-2">5</div> -->
+        <!-- <div>
+          <div class="text-primary text-3xl font-bold mb-2">5</div>
           <div class="text-2xl mb-4">📦</div>
           <p class="text-neutral-600">
             Suivez votre colis en temps réel jusqu'à sa livraison.
           </p>
-        </div>
+        </div> -->
 
       </div>
     </div>

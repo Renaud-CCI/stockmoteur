@@ -1,43 +1,53 @@
 <template>
-  <footer class="bg-neutral-900 text-neutral-400 py-10">
-    <div class="max-w-7xl mx-auto px-6 text-sm text-center space-y-4">
+  <footer class="bg-neutral-900 text-neutral-400 py-10 px-6 text-sm">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-0 2xl:px-24">
 
-      <p class="text-neutral-50 font-semibold">EURL STOCK MOTEUR</p>
+      <div class="col-span-1 text-center sm:text-left">
+        <p class=" text-neutral-50 font-semibold">EURL STOCK MOTEUR</p>
 
-      <p style="margin-top: -0.75rem">
-        11, le Riou – 81240 ALBINE – France
-      </p>
+        <p>
+          11, le Riou – 81240 ALBINE – France
+        </p>
 
-      <!-- Contact rapide -->
-      <p style="margin-top: -1rem" class="hidden sm:block">
-        <a href="tel:+33601966526" class="hover:text-primary transition">
-          📞 06 01 96 65 26
-        </a>
-        &nbsp;|&nbsp;
-        <a href="mailto:stockmoteur@laposte.net" class="hover:text-primary transition">
-          ✉ stockmoteur@laposte.net
-        </a>
-      </p>
+        <!-- Contact rapide -->
+        <p class="hidden sm:block">
+          <a href="tel:+33601966526" class="hover:text-primary transition">
+            📞 06 01 96 65 26
+          </a>
+          &nbsp;|&nbsp;
+          <a href="mailto:stockmoteur@laposte.net" class="hover:text-primary transition">
+            ✉ stockmoteur@laposte.net
+          </a>
+        </p>
 
-      <!-- Contact rapide smartphone -->
-      <p style="margin-top: -1rem" class="block sm:hidden">
-        <a href="tel:+33601966526" class="hover:text-primary transition">
-          📞 06 01 96 65 26
-        </a>
-        <br>
-        <a href="mailto:stockmoteur@laposte.net" class="hover:text-primary transition">
-          ✉ stockmoteur@laposte.net
-        </a>
-      </p>
+        <!-- Contact rapide smartphone -->
+        <p class="block sm:hidden">
+          <a href="tel:+33601966526" class="hover:text-primary transition">
+            📞 06 01 96 65 26
+          </a>
+          <br>
+          <a href="mailto:stockmoteur@laposte.net" class="hover:text-primary transition">
+            ✉ stockmoteur@laposte.net
+          </a>
+        </p>
+      </div>
 
-      <p class="hidden sm:block">
-        SIRET : 81739436400019 – TVA intracommunautaire : FR18817394364
-      </p>
-      <p class="block sm:hidden">
-        SIRET : 81739436400019<br>TVA intracommunautaire : FR18817394364
-      </p>
+      <div class="col-span-1 flex justify-center sm:justify-end sm:items-end sm:pb-2">
+        <button class="hover:text-neutral-50 underline underline-offset-2" @click="trackOpen = true">
+          Suivre votre colis
+        </button>
+      </div>
 
-      <div class="flex justify-center gap-6">
+      <div class="col-span-1 text-center sm:text-left">
+        <p class="hidden sm:block">
+          SIRET : 81739436400019 – TVA intracommunautaire : FR18817394364
+        </p>
+        <p class="block sm:hidden">
+          SIRET : 81739436400019<br>TVA intracommunautaire : FR18817394364
+        </p>
+      </div>
+
+      <div class="col-span-1 flex justify-center sm:justify-end gap-6">
         <button class="hover:text-neutral-50 underline underline-offset-2" @click="modalOpen = true">
           Conditions de garantie
         </button>
@@ -46,7 +56,7 @@
         </button>
       </div>
 
-      <p class="text-xs mt-6">
+      <p class="text-xs mt-4 col-span-1 sm:col-span-2 text-center text-neutral-500">
         Site éco-conçu par <a href="https://www.creation-site-loire.fr/" target="_blank"
           class="hover:text-primary transition">
           Renaud Bresson
@@ -250,6 +260,84 @@
     </Transition>
   </Teleport>
 
+  <!-- Modale Suivi de colis (formulaire) -->
+  <Teleport to="body">
+    <Transition name="modal">
+      <div v-if="trackOpen" class="fixed inset-0 z-50 flex items-center justify-center p-4" role="dialog"
+        aria-modal="true" aria-label="Suivi de colis">
+
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black/70" @click="trackOpen = false"></div>
+
+        <!-- Panneau -->
+        <div
+          class="relative z-10 bg-white text-neutral-800 rounded-xl shadow-2xl w-full max-w-3xl max-h-[90vh] flex flex-col">
+
+          <!-- En-tête -->
+          <div class="flex items-center justify-between px-6 py-4 border-b border-neutral-200 shrink-0">
+            <h2 class="text-lg font-bold">Suivre votre colis</h2>
+            <button @click="trackOpen = false"
+              class="text-neutral-500 hover:text-neutral-900 transition text-2xl leading-none" aria-label="Fermer">
+              &times;
+            </button>
+          </div>
+
+          <!-- Contenu scrollable -->
+          <div class="overflow-y-auto px-6 py-6 text-sm">
+
+            <form class="space-y-6" action="https://formsubmit.co/ce1e642bd6990aef0ef9fdee3d7b0f6a" method="POST">
+
+              <input type="hidden" name="_next" value="https://stockmoteur.vercel.app/?sent=1">
+              <input type="hidden" name="_subject" value="Suivi de colis - stockmoteur.fr">
+              <input type="text" name="website" class="hidden">
+
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label class="block mb-2">Nom <span class="text-red-500">*</span></label>
+                  <input name="nom" type="text" required aria-required="true"
+                    class="w-full p-3 rounded bg-neutral-50 text-black">
+                </div>
+
+                <div>
+                  <label class="block mb-2">Téléphone <span class="text-red-500">*</span></label>
+                  <input name="téléphone" type="tel" required aria-required="true"
+                    class="w-full p-3 rounded bg-neutral-50 text-black">
+                </div>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label class="block mb-2">Email <span class="text-red-500">*</span></label>
+                  <input name="email" type="email" required aria-required="true"
+                    class="w-full p-3 rounded bg-neutral-50 text-black">
+                </div>
+
+                <div>
+                  <label class="block mb-2">N° de commande <span class="text-red-500">*</span></label>
+                  <input name="numero-de-commande" type="text" required aria-required="true"
+                    class="w-full p-3 rounded bg-neutral-50 text-black">
+                </div>
+              </div>
+
+              <div>
+                <label class="block mb-2">Commentaires / Message <span class="text-red-500">*</span></label>
+                <textarea name="message" rows="4" required aria-required="true"
+                  class="w-full p-3 rounded bg-neutral-50 text-black"></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-primary py-3 rounded font-semibold hover:opacity-90 transition">
+                Envoyer ma demande de suivi
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </Transition>
+  </Teleport>
+
   <!-- Modale Mentions légales -->
   <Teleport to="body">
     <Transition name="modal">
@@ -362,11 +450,13 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const modalOpen = ref(false)
 const legalOpen = ref(false)
+const trackOpen = ref(false)
 
 function onKeydown(e: KeyboardEvent) {
   if (e.key === 'Escape') {
     modalOpen.value = false
     legalOpen.value = false
+    trackOpen.value = false
   }
 }
 

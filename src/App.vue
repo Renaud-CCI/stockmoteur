@@ -8,16 +8,26 @@
     </div>
   </Transition>
 
-  <HeaderContainer />
-  <HeroContainer />
-  <EngagmentContainer />
-  <QualityContainer />
-  <ExpertContainer />
-  <GearboxContainer />
-  <ServiceContainer />
-  <ProcessContainer />
-  <FormContainer />
-  <FooterContainer />
+  <!-- Background image -->
+  <div class="absolute inset-0 fixed z-0">
+    <img src="@/assets/images/photo_3.webp" alt="Moteur coupe transversale pistons" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/70"></div>
+  </div>
+
+  <div class="relative z-10">
+    <HeaderContainer />
+    <HeroContainer />
+    <div class="w-full 2xl:max-w-7xl mx-auto 2xl:rounded-t-xl overflow-hidden bg-neutral-50">
+      <EngagmentContainer />
+      <QualityContainer />
+      <ExpertContainer />
+      <GearboxContainer />
+      <ServiceContainer />
+      <ProcessContainer />
+      <FormContainer />
+    </div>
+    <FooterContainer />
+  </div>
 </template>
 
 <script setup lang="ts">

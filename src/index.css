@@ -5,6 +5,11 @@
   --color-primary: #ed1c24;
   --color-secondary: #2056a3;
 }
+/* Provide short aliases for legacy usages (e.g. var(--primary)) */
+:root {
+  --primary: var(--color-primary);
+  --secondary: var(--color-secondary);
+}
 /* stylelint-enable at-rule-no-unknown */
 
 /* Smooth scrolling for in-page anchor links and space for fixed header */

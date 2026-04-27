@@ -15,13 +15,13 @@
         <div class="grid md:grid-cols-2 gap-4">
           <div>
             <label class="block mb-2">Nom <span class="text-red-500">*</span></label>
-            <input name="name" type="text" required aria-required="true"
+            <input name="nom" type="text" required aria-required="true"
               class="w-full p-3 rounded bg-neutral-50 text-black">
           </div>
 
           <div>
             <label class="block mb-2">Téléphone <span class="text-red-500">*</span></label>
-            <input name="phone" type="tel" required aria-required="true"
+            <input name="telephone" type="tel" required aria-required="true"
               class="w-full p-3 rounded bg-neutral-50 text-black">
           </div>
         </div>
@@ -35,12 +35,12 @@
         <div class="grid md:grid-cols-2 gap-4">
           <div>
             <label class="block mb-2">Immatriculation <span class="text-neutral-300">(optionnel)</span></label>
-            <input name="plate" type="text" class="w-full p-3 rounded bg-neutral-50 text-black">
+            <input name="immatriculation" type="text" class="w-full p-3 rounded bg-neutral-50 text-black">
           </div>
 
           <div>
             <label class="block mb-2">Pièce recherchée <span class="text-red-500">*</span></label>
-            <select name="part" required aria-required="true" class="w-full p-3 rounded bg-neutral-50 text-black">
+            <select name="piece" required aria-required="true" class="w-full p-3 rounded bg-neutral-50 text-black">
               <option value="">-- Choisir --</option>
               <option value="moteur">Moteur</option>
               <option value="boite">Boite</option>
