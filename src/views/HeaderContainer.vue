@@ -13,7 +13,7 @@
       <!-- Contact rapide -->
       <div class="hidden md:flex items-center gap-6">
         <a href="tel:+33601966526" class="text-neutral-700 font-medium hover:text-primary transition">
-          📞 06 01 96 65 26
+          <span aria-hidden="true">📞</span> 06 01 96 65 26
         </a>
         <a href="#contact"
           class="bg-primary text-neutral-50 px-5 py-2 rounded-lg font-semibold hover:opacity-90 transition">
@@ -24,7 +24,7 @@
       <!-- Contact rapide (mobile)-->
       <div class="flex md:hidden items-end gap-6">
         <a href="tel:+33601966526" class="text-neutral-700 font-medium hover:text-primary transition">
-          📞 06 01 96 65 26
+          <span aria-hidden="true">📞</span> 06 01 96 65 26
         </a>
       </div>
 

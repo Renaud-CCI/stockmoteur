@@ -10,7 +10,7 @@
 
         <div>
           <!-- <div class="text-primary text-3xl font-bold mb-2">1</div> -->
-          <div class="text-2xl mb-4">📞</div>
+          <div class="text-2xl mb-4" aria-hidden="true">📞</div>
           <p class="text-neutral-600">
             Vous nous contactez avec les informations de votre véhicule.
           </p>
@@ -18,7 +18,7 @@
 
         <div>
           <!-- <div class="text-primary text-3xl font-bold mb-2">2</div> -->
-          <div class="text-2xl mb-4">🔍</div>
+          <div class="text-2xl mb-4" aria-hidden="true">🔍</div>
           <p class="text-neutral-600">
             Nous vérifions la compatibilité et sélectionnons la pièce adaptée.
           </p>
@@ -26,7 +26,7 @@
 
         <div>
           <!-- <div class="text-primary text-3xl font-bold mb-2">3</div> -->
-          <div class="text-2xl mb-4">💳</div>
+          <div class="text-2xl mb-4" aria-hidden="true">💳</div>
           <p class="text-neutral-600">
             Paiement sécurisé, avec possibilité de règlement en 4 fois.
           </p>
@@ -34,7 +34,7 @@
 
         <div>
           <!-- <div class="text-primary text-3xl font-bold mb-2">4</div> -->
-          <div class="text-2xl mb-4">🚚</div>
+          <div class="text-2xl mb-4" aria-hidden="true">🚚</div>
           <p class="text-neutral-600">
             Expédition en 24/48h partout en France métropolitaine.
           </p>

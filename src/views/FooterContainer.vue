@@ -12,22 +12,22 @@
         <!-- Contact rapide -->
         <p class="hidden sm:block">
           <a href="tel:+33601966526" class="hover:text-primary transition">
-            📞 06 01 96 65 26
+            <span aria-hidden="true">📞</span> 06 01 96 65 26
           </a>
           &nbsp;|&nbsp;
           <a href="mailto:stockmoteur@laposte.net" class="hover:text-primary transition">
-            ✉ stockmoteur@laposte.net
+            <span aria-hidden="true">✉</span> stockmoteur@laposte.net
           </a>
         </p>
 
         <!-- Contact rapide smartphone -->
         <p class="block sm:hidden">
           <a href="tel:+33601966526" class="hover:text-primary transition">
-            📞 06 01 96 65 26
+            <span aria-hidden="true">📞</span> 06 01 96 65 26
           </a>
           <br>
           <a href="mailto:stockmoteur@laposte.net" class="hover:text-primary transition">
-            ✉ stockmoteur@laposte.net
+            <span aria-hidden="true">✉</span> stockmoteur@laposte.net
           </a>
         </p>
       </div>

@@ -39,12 +39,12 @@
 
       <div class="mt-8 2xl:mt-12 flex flex-col md:flex-row gap-4 justify-center  2xl:text-xl">
         <a href="#contact" class="bg-primary px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">
-          🔧 Demander une pièce
+          <span aria-hidden="true">🔧</span> Demander une pièce
         </a>
 
         <a href="tel:+33601966526"
           class="border border-neutral-50 px-6 py-3 rounded-lg font-semibold hover:bg-neutral-50 hover:text-black transition">
-          📞 Appeler maintenant
+          <span aria-hidden="true">📞</span> Appeler maintenant
         </a>
       </div>
     </div>
