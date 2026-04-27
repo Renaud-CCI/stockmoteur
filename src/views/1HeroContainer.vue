@@ -19,7 +19,7 @@
       <div class="mt-4 grid grid-cols-6">
         <div class="col-span-6 sm:hidden w-full flex justify-end my-2 sm:my-0">
           <div class="star w-54 p-3">
-            Garantis 3 à 12 mois selon le modèle
+            Garantie 3 à 12 mois selon le modèle
           </div>
         </div>
 
@@ -32,7 +32,7 @@
 
         <div class="mt-4 col-span-1 hidden sm:block">
           <div class="star w-42 p-3 text-sm">
-            Garantis 3 à 12 mois selon le modèle
+            Garantie 3 à 12 mois selon le modèle
           </div>
         </div>
       </div>
