@@ -313,8 +313,8 @@
                 </div>
 
                 <div>
-                  <label class="block mb-2">N° de commande <span class="text-red-500">*</span></label>
-                  <input name="numero-de-commande" type="text" required aria-required="true"
+                  <label class="block mb-2">N° de facture <span class="text-red-500">*</span></label>
+                  <input name="numero-de-facture" type="text" required aria-required="true"
                     class="w-full p-3 rounded bg-neutral-50 text-black">
                 </div>
               </div>
