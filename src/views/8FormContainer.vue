@@ -6,7 +6,7 @@
         Demander une pièce
       </h2>
 
-      <form class="space-y-6" action="https://formsubmit.co/contact@stockmoteur.fr" method="POST">
+      <form class="space-y-6" action="https://formsubmit.co/334c083b8ef2f7504ad05661fc3f0029" method="POST">
 
         <input type="hidden" name="_next" value="https://stockmoteur.vercel.app/?sent=1">
         <input type="hidden" name="_subject" value="Nouvelle demande sur stockmoteur.fr">
