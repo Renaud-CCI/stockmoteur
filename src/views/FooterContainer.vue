@@ -285,7 +285,7 @@
           <!-- Contenu scrollable -->
           <div class="overflow-y-auto px-6 py-6 text-sm">
 
-            <form class="space-y-6" action="https://formsubmit.co/ce1e642bd6990aef0ef9fdee3d7b0f6a" method="POST">
+            <form class="space-y-6" action="https://formsubmit.co/‌stockmoteur@laposte.net" method="POST">
 
               <input type="hidden" name="_next" value="https://stockmoteur.vercel.app/?sent=1">
               <input type="hidden" name="_subject" value="Suivi de colis - stockmoteur.fr">
